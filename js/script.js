@@ -69,17 +69,17 @@ const displayInfo = (explore) =>{
  <img src="${explore.image}">
  <h3>Name : </h3>${explore.name}
  <h3>Release Date : </h3>${explore.releaseDate ? explore.releaseDate : "Not Found"}
- <p><h3>Features :</h3><p>ChipSet : </p>${explore.mainFeatures.chipSet}
+<h3>Features :</h3><p>ChipSet : </p>${explore.mainFeatures.chipSet}
                        <p>DisplaySize : </p>  ${explore.mainFeatures.displaySize}
                        <p>Memory :</p>  ${explore.mainFeatures.memory}
-        <h3>Sensors :</h3><p>${explore.mainFeatures.sensors}</p>
-        <h3>Others :</h3> <p>Bluetooth : ${explore.others.Bluetooth}</p>
-        <p>GPS : ${explore.others.GPS}</p>
-        <p>NFC : ${explore.others.NFC}</p>
-        <p>Radio : ${explore.others.Radio}</p>
-        <p>USB : ${explore.others.USB}</p>
-        <p>WLAN : ${explore.others.WLAN}</p>
- </p>
+        <h3>Sensors :</h3>${explore.mainFeatures.sensors}
+        <h3>Others :</h3> 
+        <p>Bluetooth : ${explore?.others?.Bluetooth ? explore.others?.Bluetooth : "Not Available"}</p>
+        <p>GPS : ${explore?.others?.GPS ? explore?.others?.GPS: "Not Available"}</p>
+        <p>NFC : ${explore?.others?.NFC ? explore?.others?.NFC : "Not Available"}</p>
+        <p>Radio : ${explore?.others?.Radio ? explore?.others?.Radio : "Not Available"}</p>
+        <p>USB : ${explore?.others?.USB ? explore?.others?.USB : "Not Available"}</p>
+        <p>WLAN : ${explore?.others?.WLAN ? explore?.others?.WLAN : "Not Available"}</p>
  `
  more_info.appendChild(div)
  loading("none")

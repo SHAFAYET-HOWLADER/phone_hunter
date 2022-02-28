@@ -153,6 +153,7 @@ input {
     cursor: pointer;
 
 }
+
 /* -----------|--display area end--|------------*/
 
 /* -----------|--phone_details area start--|------------*/
@@ -168,6 +169,7 @@ input {
     background-color: #00ccf0;
     margin: 5px 0px;
 }
+
 .infos p {
     margin: 5px 0px;
 }
