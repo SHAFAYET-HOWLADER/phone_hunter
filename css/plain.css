@@ -40,7 +40,7 @@ span {
 body {
     overflow-x: hidden;
     user-select: none;
-    background-color: rgba(241, 240, 240, 0.2);
+    background-color: rgba(206, 197, 197, 0.39);
 }
 
 /* -----------|--common css end--|------------*/
@@ -77,6 +77,38 @@ body {
     background-color: #ff55a1;
     cursor: pointer;
     color: #fff;
+}
+
+.phone_title h1 {
+    text-align: center;
+    padding: 20px 0px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+
+.search_area {
+    text-align: center;
+}
+
+.search_area button,
+input {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+
+.search_area input:focus {
+    box-shadow: 0px 0px 5px 0px #00ccf0;
+    transition: all linear .4s;
+}
+
+.search_area button {
+    background-color: #00ccf0;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* -----------|--navbar css end--|------------*/
