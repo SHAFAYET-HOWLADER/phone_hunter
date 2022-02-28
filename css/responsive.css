@@ -1,0 +1,40 @@
+/*----------mobile device-----------*/
+@media (max-width: 600px) {
+    #display_phone {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #display_info {
+        width: 50%;
+    }
+
+    .logo a,
+    .menu li {
+        font-size: 20px;
+    }
+    .phone_title h1 {
+     font-size: 20px;
+    }
+}
+
+/*--------------tablet device--------------*/
+@media (min-width: 600px) and (max-width: 800px) {
+    #display_phone {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #display_info {
+        width: 50%;
+    }
+}
+
+/*--------------large device--------------*/
+@media (min-width: 800px) and (max-width: 1500px) {
+    #display_phone {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #display_info {
+        width: 50%;
+    }
+}

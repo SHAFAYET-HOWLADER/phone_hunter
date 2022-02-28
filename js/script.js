@@ -40,7 +40,7 @@ const displayPhone = (phones) =>{
         div.classList.add("phone_items");
         div.innerHTML = `
         <img src="${phone.image}">
-        <h3>Name : ${phone.phone_name}</h3>
+        <h3>Name : ${phone.phone_name} </h3> 
         <h3>Brand : ${phone.brand}</h3>
         <button onclick="phoneDetails('${phone.slug}')">More-Info</button>
         `
@@ -60,26 +60,28 @@ const phoneDetails = (phoneId) =>{
 }
 // display phone details
 const displayInfo = (explore) =>{
+    console.log(explore)
  const more_info = document.getElementById("display_info");
  more_info.textContent = "";
  const div = document.createElement("div");
  div.classList.add("infos");
  div.innerHTML = `
  <img src="${explore.image}">
- <h3>Name : ${explore.name}</h3>
- <h3>Release Date : ${explore.releaseDate}</h3>
- <p><h3>Features :</h3> ${explore.mainFeatures.chipSet}
-                         ${explore.mainFeatures.displaySize}
-                         ${explore.mainFeatures.memory}
-        <h3>Sensors :</h3>${explore.mainFeatures.sensors}
-        <h3>Others :</h3>  ${explore.others.Bluetooth}
-          ${explore.others.GPS}
-          ${explore.others.NFC}
-          ${explore.others.Radio}
-          ${explore.others.USB}
-          ${explore.others.WLAN}
+ <h3>Name : </h3>${explore.name}
+ <h3>Release Date : </h3>${explore.releaseDate ? explore.releaseDate : "Not Found"}
+ <p><h3>Features :</h3><p>ChipSet : </p>${explore.mainFeatures.chipSet}
+                       <p>DisplaySize : </p>  ${explore.mainFeatures.displaySize}
+                       <p>Memory :</p>  ${explore.mainFeatures.memory}
+        <h3>Sensors :</h3><p>${explore.mainFeatures.sensors}</p>
+        <h3>Others :</h3> <p>Bluetooth : ${explore.others.Bluetooth}</p>
+        <p>GPS : ${explore.others.GPS}</p>
+        <p>NFC : ${explore.others.NFC}</p>
+        <p>Radio : ${explore.others.Radio}</p>
+        <p>USB : ${explore.others.USB}</p>
+        <p>WLAN : ${explore.others.WLAN}</p>
  </p>
  `
  more_info.appendChild(div)
  loading("none")
 }
+
