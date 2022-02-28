@@ -30,6 +30,7 @@ p,
 span {
     margin: 0px;
     padding: 0px;
+    line-height: 28px;
 }
 
 .container {
@@ -159,6 +160,31 @@ input {
 }
 
 /* -----------|--display area end--|------------*/
+
+/* -----------|--phone_details area start--|------------*/
+.infos {
+    padding: 10px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.infos img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#display_info {
+    width: 40%;
+    background-color: #fff;
+    margin: 0px auto;
+    border-radius: 8px;
+}
+
+/* -----------|--phone_details area end--|------------*/
 
 /* -----------|--error handling start--|------------*/
 #error_msg {

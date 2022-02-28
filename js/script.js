@@ -61,12 +61,12 @@ const displayInfo = (explore) =>{
  div.innerHTML = `
  <img src="${explore.image}">
  <h3>Name : ${explore.name}</h3>
- <h3>Name : ${explore.releaseDate}</h3>
- <p>Features : ${explore.mainFeatures.chipSet}
+ <h3>Release Date : ${explore.releaseDate}</h3>
+ <p><h3>Features :</h3> ${explore.mainFeatures.chipSet}
                          ${explore.mainFeatures.displaySize}
                          ${explore.mainFeatures.memory}
-        Sensors :   ${explore.mainFeatures.sensors}
-          ${explore.others.Bluetooth}
+        <h3>Sensors :</h3>${explore.mainFeatures.sensors}
+        <h3>Others :</h3>  ${explore.others.Bluetooth}
           ${explore.others.GPS}
           ${explore.others.NFC}
           ${explore.others.Radio}
