@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,50 @@
     <!--------|---css link--|----------->
     <link rel="stylesheet" href="css/plain.css">
 </head>
+
 <body>
     <!------------|---navbar part start--|----------------->
-     <section id="navbar">
-         <div class="container">
-             <div class="nav_items">
+    <section id="navbar">
+        <div class="container">
+            <div class="nav_items">
                 <div class="logo">
                     <a href="#">Home</a>
                 </div>
                 <div class="menu">
-                   <ul>
-                       <li>Device Finder</li>
-                   </ul>
+                    <ul>
+                        <li>Device Finder</li>
+                    </ul>
                 </div>
-             </div>
-             <div class="phone_title">
-                 <h1>A  perfect  place for finding smartphones</h1>
-             </div>
-             <div class="search_area">
-                 <input type="text" placeholder="Search a phone by name">
-                 <button>Search</button>
-             </div>
-         </div>
-     </section>
-     
+            </div>
+        </div>
+    </section>
     <!------------|---navbar part end--|----------------->
-    
+    <section id="displayPhone">
+
+
+        <!------------|---phone title start--|----------------->
+        <div class="phone_title">
+            <h1>A perfect place for finding smartphones</h1>
+        </div>
+        <!------------|---phone title end--|----------------->
+
+        <!------------|---search area start--|----------------->
+        <div class="search_area">
+            <input type="text" placeholder="Search a phone by name" id="inputField">
+            <button onclick="loadData()">Search</button>
+        </div>
+        <!------------|---search title end--|----------------->
+
+        <!------------|---display phone start--|----------------->
+        <div id="display_phone">
+
+        </div>
+        <!------------|---display phone end--|----------------->
+
+
+    </section>
+
+
 
 
 
@@ -41,4 +60,5 @@
     <!------------|---js link--|----------------->
     <script src="js/script.js"></script>
 </body>
+
 </html>
