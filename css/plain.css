@@ -159,3 +159,14 @@ input {
 }
 
 /* -----------|--display area end--|------------*/
+
+/* -----------|--error handling start--|------------*/
+#error_msg {
+    text-align: center;
+    color: #f3562f;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/* -----------|--error handling end--|------------*/
