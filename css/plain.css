@@ -163,25 +163,25 @@ input {
 
 /* -----------|--phone_details area start--|------------*/
 .infos {
-    padding: 10px;
+    padding: 20px;
     font-family: 'Noto Serif', serif;
     font-weight: 700;
-    text-align: justify;
+    box-shadow: 0px 0px 8px 0px #000;
+    overflow: hidden;
 }
 
 .infos img {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0px;
+    width: 50%;
+    display: grid;
+    padding: 15px 0px;
+    margin: 0px auto;
 }
 
 #display_info {
-    width: 40%;
+    width: 35%;
     background-color: #fff;
     margin: 0px auto;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 /* -----------|--phone_details area end--|------------*/
@@ -196,3 +196,14 @@ input {
 }
 
 /* -----------|--error handling end--|------------*/
+
+/* -----------|--spinner set start--|------------*/
+#spinner {
+    display: none;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+
+/* -----------|--spinner set end--|------------*/

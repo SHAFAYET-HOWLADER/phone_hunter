@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-Six</title>
-    <!--------|---css link--|----------->
+    <!-------------css link------------->
     <link rel="stylesheet" href="css/plain.css">
 </head>
 
 <body>
-    <!------------|---navbar part start--|----------------->
+    <!---------------navbar part start------------------->
     <section id="navbar">
         <div class="container">
             <div class="nav_items">
@@ -26,39 +26,41 @@
             </div>
         </div>
     </section>
-    <!------------|---navbar part end--|----------------->
+    <!---------------navbar part end------------------->
     <section id="displayPhone">
-        <!------------|---phone title start--|----------------->
+        <!---------------phone title start------------------->
         <div class="phone_title">
             <h1>A perfect place for finding smartphones</h1>
         </div>
-        <!------------|---phone title end--|----------------->
+        <!---------------phone title end------------------->
 
-        <!------------|---search area start--|----------------->
+        <!---------------search area start------------------->
         <div class="search_area">
             <input type="text" placeholder="Search a phone by name" id="inputField">
             <button onclick="loadData()">Search</button>
             <div id="error_msg"></div>
         </div>
-        <!------------|---search title end--|----------------->
+        <!---------------search title end------------------->
 
-        <!------------|---more_info  start--|----------------->
-         <div id="display_info"></div>
-        <!------------|---more_info  end--|----------------->
+        <!---------------more_info  start------------------->
+        <div id="display_info"></div>
+        <!---------------more_info  end------------------->
 
-        <!------------|---display phone start--|----------------->
-        <div id="display_phone">
-
-        </div>
-        <!------------|---display phone end--|----------------->
+        <!---------------display phone start------------------->
+        <div id="display_phone"></div>
+        <!---------------display phone end------------------->
     </section>
 
+    <!---------------display spinner start------------------->
+    <div id="spinner">
+        <label for="file">Please Wait....</label>
+        <br>
+        <progress max="100"> 32% </progress>
+    </div>
+    <!---------------display spinner end------------------->
 
 
-
-
-
-    <!------------|---js link--|----------------->
+    <!---------------js link------------------->
     <script src="js/script.js"></script>
 </body>
 

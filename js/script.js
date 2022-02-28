@@ -1,4 +1,7 @@
-
+//adding spinner
+const loading = (progress) =>{
+    document.getElementById("spinner").style.display = progress;
+}
 // start js
 // load phone data
 const loadData = () =>{
@@ -18,6 +21,7 @@ const loadData = () =>{
         .then(res => res.json())
         .then(data => displayPhone(data.data))
         errorMsg.innerText = "";
+        loading("block")
   }
 }
 // display phone data
@@ -28,6 +32,7 @@ const displayPhone = (phones) =>{
     //error handling
     if(phones.length === 0){
      errorMsg.innerText = "! please input valid phone name"
+    loading("none")
     }
    else{
     phones.forEach(phone => {
@@ -41,6 +46,7 @@ const displayPhone = (phones) =>{
         `
         showPhone.appendChild(div);
     });
+    loading("none")
    }
 }
 
@@ -50,10 +56,10 @@ const phoneDetails = (phoneId) =>{
  fetch(url)
  .then(res => res.json())
  .then(data =>displayInfo(data.data))
+ loading("block")
 }
 // display phone details
 const displayInfo = (explore) =>{
-    console.log(explore)
  const more_info = document.getElementById("display_info");
  more_info.textContent = "";
  const div = document.createElement("div");
@@ -75,4 +81,5 @@ const displayInfo = (explore) =>{
  </p>
  `
  more_info.appendChild(div)
+ loading("none")
 }
