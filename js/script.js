@@ -69,9 +69,9 @@ const displayInfo = (explore) =>{
  <img src="${explore.image}">
  <h3>Name : </h3>${explore.name}
  <h3>Release Date : </h3>${explore.releaseDate ? explore.releaseDate : "Not Found"}
-<h3>Features :</h3><p>ChipSet : </p>${explore.mainFeatures.chipSet}
-                       <p>DisplaySize : </p>  ${explore.mainFeatures.displaySize}
-                       <p>Memory :</p>  ${explore.mainFeatures.memory}
+<h3>Features :</h3><p>ChipSet : ${explore.mainFeatures.chipSet}</p>
+                       <p>DisplaySize : ${explore.mainFeatures.displaySize}</p> 
+                       <p>Memory : ${explore.mainFeatures.memory}</p> 
         <h3>Sensors :</h3>${explore.mainFeatures.sensors}
         <h3>Others :</h3> 
         <p>Bluetooth : ${explore?.others?.Bluetooth ? explore.others?.Bluetooth : "Not Available"}</p>

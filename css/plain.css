@@ -121,7 +121,6 @@ input {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    align-items: center;
     border-radius: 8px;
     padding: 20px 0px;
 }
@@ -131,7 +130,7 @@ input {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    width: 60%;
+    width: 80%;
     font-family: 'Noto Serif', serif;
     font-weight: 700;
 }
@@ -175,16 +174,16 @@ input {
 }
 
 .infos img {
-    width: 60%;
-    display: grid;
+    width: 40%;
     padding: 15px 0px;
     margin: 0px auto;
+    display: flex;
 }
 
 #display_info {
-    width: 30%;
     background-color: #fff;
     margin: 0px auto;
+    width: 100%;
 }
 
 /* -----------|--phone_details area end--|------------*/
