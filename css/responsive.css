@@ -5,9 +5,10 @@
     }
 
     #display_info {
-        width: 50%;
+        width: 80%;
     }
-    .infos img{
+
+    .infos img {
         width: 100%;
     }
 
@@ -30,7 +31,12 @@
     #display_info {
         width: 50%;
     }
-    .infos img{
+
+    #display_info {
+        width: 90%;
+    }
+
+    .infos img {
         width: 100%;
     }
 }
