@@ -1,9 +1,8 @@
-
-//****************Start Js**********************//
 //adding spinner
 const loading = (progress) =>{
-  document.getElementById("spinner").style.display = progress;
+    document.getElementById("spinner").style.display = progress;
 }
+// start js
 // load phone data
 const loadData = () =>{
   const input = document.getElementById("inputField");
@@ -13,7 +12,7 @@ const loadData = () =>{
   input.value = "";
   //error handling
   if(inputValue === "" || !isNaN(inputValue)){
-    errorMsg.innerText = "! please search by phone name";
+    errorMsg.innerText = "! please search by phone name"
   }
   else{
         //fetch phone data
@@ -22,24 +21,23 @@ const loadData = () =>{
         .then(res => res.json())
         .then(data => displayPhone(data.data.slice(0, 20)))
         errorMsg.innerText = "";
-        loading("block")
+        loading("block");
   }
 }
 
 // display phone data
 const displayPhone = (phones) =>{
     const showPhone = document.getElementById("display_phone");
+    const seeDetails = document.getElementById("showAll");
     const errorMsg = document.getElementById("error_msg");
-    const showAll = document.getElementById("showAll");
-    //clear data
     showPhone.textContent = "";
     //error handling
     if(phones.length === 0){
      errorMsg.innerText = "! please input valid phone name"
-    loading("none")
+    loading("none");
     }
    else{
-        phones.forEach(phone => {
+    phones.forEach(phone => {
         const div = document.createElement("div");
         div.classList.add("phone_items");
         div.innerHTML = `
@@ -50,24 +48,9 @@ const displayPhone = (phones) =>{
         `
         showPhone.appendChild(div);
     });
-    showAll.style.display = "block";
-    loading("none")
+    loading("none");
+    seeDetails.style.display = "block";
    }
-}
-//show all data
-const displayShowAll = ()=>{
-  const input = document.getElementById("inputField");
-  const errorMsg = document.getElementById("error_msg");
-  const inputValue = input.value;
-  //clear input
-  input.value = "";
-  //fetch phone data
-  const url =`https://openapi.programming-hero.com/api/phones?search=${inputValue}`;
-  fetch(url)
-   .then(res => res.json())
-   .then(data => displayPhone(data.data))
-    errorMsg.innerText = "";
-   loading("block")
 }
 
 // load phone details
@@ -81,7 +64,6 @@ const phoneDetails = (phoneId) =>{
 // display phone details
 const displayInfo = (explore) =>{
  const more_info = document.getElementById("display_info");
- //clear data
  more_info.textContent = "";
  const div = document.createElement("div");
  div.classList.add("infos");
@@ -101,9 +83,8 @@ const displayInfo = (explore) =>{
         <p>USB : ${explore?.others?.USB ? explore?.others?.USB : "Not Available"}</p>
         <p>WLAN : ${explore?.others?.WLAN ? explore?.others?.WLAN : "Not Available"}</p>
  `
- more_info.appendChild(div)
- loading("none")
+ more_info.appendChild(div);
+ loading("none");
 }
-//****************End Js**********************//
 
 
